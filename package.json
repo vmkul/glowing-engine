@@ -1,0 +1,31 @@
+{
+  "name": "glowing-engine",
+  "version": "1.0.0",
+  "description": "Nothing to see here",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vmkul/glowing-engine.git"
+  },
+  "keywords": [
+    "js"
+  ],
+  "author": "vmkul",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vmkul/glowing-engine/issues"
+  },
+  "homepage": "https://github.com/vmkul/glowing-engine#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.20.0",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1"
+  }
+}
