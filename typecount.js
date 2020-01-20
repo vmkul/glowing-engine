@@ -15,4 +15,19 @@ const count = arr => {
   return types;
 };
 
-count(mass);
+const forcount = arr => {
+  const types = {};
+  for (let i = 0; i < arr.length; i++) {
+    const element = arr[i];
+    const type = typeof element;
+    if (Object.keys(types).includes(type)) { types[type]++; }
+    else {
+      types[type] = 1;
+    }
+  }
+  console.log(types);
+  return types;
+};
+
+
+forcount(mass);

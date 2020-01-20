@@ -1,7 +1,28 @@
 'use strict';
 
-const sum = (a, b) => sum(a + b);
-const func = () => console.log(sum(2, 3));
+const wrapAsync = fn => (...args) => setTimeout(() => fn(...args),
+  Math.floor(Math.random() * 5000));
 
-setInterval(func, 100);
-console.log('some text');
+const sleep = time => {
+  const promise = new Promise((resolve) => {
+    setTimeout(resolve, time)
+  });
+  return promise;
+};
+
+const Func = async name => {
+  await sleep(3000);
+  return name;
+};
+
+const asyncFunc = wrapAsync(Func);
+asyncFunc();
+
+(async () => {
+
+  console.time('1');
+  const data = await Func('async.js');
+  console.log(data);
+  console.timeEnd('1');
+
+})();
