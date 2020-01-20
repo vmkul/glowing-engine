@@ -25,12 +25,6 @@ const asyncRead = file => {
 	});
 };
 
-(async () => {
-
-
-
-})();
-
 const Func = async name => {
   await sleep(3000);
   return name;
